@@ -1,0 +1,68 @@
+﻿<Window x:Class="Programowanie_Projekt_Pylinskyi_Kyrylo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Programowanie_Projekt_Pylinskyi_Kyrylo"
+        mc:Ignorable="d"
+        Title="Data Base" Height="350" Width="1000">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF1772B2"/> 
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.8"/>
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Foreground" Value="#004085"/>
+            <Setter Property="Background" Value="#c7ecee"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Foreground" Value="#004085"/>
+            <Setter Property="Background" Value="#dff9fb"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="InputBlock" Content="Create Employee" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontWeight="Bold"/>
+ 
+        <TextBox x:Name="surnameBox" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="nameBox" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="etatBox" Grid.Row="3" Grid.Column="1"/>
+        <TextBox x:Name="peselBox" Grid.Row="4" Grid.Column="1"/>
+        <TextBox x:Name="bruttoBox" Grid.Row="5" Grid.Column="1"/>
+
+        <Label Content="SURNAME" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="NAME" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="PESEL" Grid.Row="4" Grid.Column="0"/>
+        <Label Content="ETAT" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="BRUTTO" Grid.Row="5" Grid.Column="0"/>
+        
+        <Button x:Name="Input" Content="INPUT" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Click="Input_Click"/>
+
+        <Label Content="PESEL:" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <TextBox x:Name="peselFind" Grid.Column="3" Grid.Row="0"/>
+        <DataGrid x:Name="BaseGrid" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="5" AutoGenerateColumns="True" HorizontalGridLinesBrush="DarkGray"
+    RowBackground="#c7ecee" AlternatingRowBackground="#dff9fb"  Background="#c7ecee"/>
+
+        <Button x:Name="Update" Content="UPDATE" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="6" Click="Update_Click" />
+        <Button x:Name="Find" Content="Find" Grid.Column="4" Grid.Row="0" Click="Find_Click"/>
+    </Grid>
+</Window>

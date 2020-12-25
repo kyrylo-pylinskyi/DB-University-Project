@@ -8,11 +8,11 @@ namespace Programowanie_Projekt_Pylinskyi_Kyrylo
 {
     public class Employee
     {
-        public static int Id { get; set; }
+        public string Id { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
         public string PESEL { get; set; }
-        public string Etat { get; set; }
+        public double Etat { get; set; }
         public double Brutto { get; set; }
         public double Netto { get; set; }
         public double Podatek { get; set; }

@@ -42,17 +42,17 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label x:Name="InputBlock" Content="Create Employee" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontWeight="Bold"/>
- 
+
         <TextBox x:Name="surnameBox" Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="nameBox" Grid.Row="2" Grid.Column="1"/>
-        <TextBox x:Name="etatBox" Grid.Row="3" Grid.Column="1"/>
-        <TextBox x:Name="peselBox" Grid.Row="4" Grid.Column="1"/>
+        <TextBox x:Name="peselBox" Grid.Row="3" Grid.Column="1"/>
+        <TextBox x:Name="etatBox" Grid.Row="4" Grid.Column="1"/>
         <TextBox x:Name="bruttoBox" Grid.Row="5" Grid.Column="1"/>
 
         <Label Content="SURNAME" Grid.Row="1" Grid.Column="0"/>
         <Label Content="NAME" Grid.Row="2" Grid.Column="0"/>
-        <Label Content="PESEL" Grid.Row="4" Grid.Column="0"/>
-        <Label Content="ETAT" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="PESEL" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="ETAT" Grid.Row="4" Grid.Column="0"/>
         <Label Content="BRUTTO" Grid.Row="5" Grid.Column="0"/>
         
         <Button x:Name="Input" Content="INPUT" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Click="Input_Click"/>
